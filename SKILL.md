@@ -41,6 +41,8 @@ One request evaluates shared state against independent typed questions. Jev retu
 
 Trace the product flows that affect users. Find where semantic decisions cost too much, take too long, use brittle rules, or do not happen. Identify design choices that depend on those limits. If the code and product support a new capability, include at least one. Exclude ideas without a specific user benefit or integration point.
 
+If the user asks for a deep audit, read the [full investigation checklist](references/full-investigation.md). It preserves the original Jevify prompt. Apply the chosen provider route and current documentation when you use it.
+
 For each promising idea, identify the available state and the questions that Jev will answer. Show which questions can share one request. Explain how code will use the answers. Name the work that still needs generation, retrieval, deeper reasoning, or deterministic logic. For each leading idea, show a request through the chosen route and code that uses its answers. Do not put a complex reasoning task into a vague classification question.
 
 Compare the full workflow with the current implementation and simpler options that can meet the same goal. Include provider overhead, question tokens, downstream work, retries, and costly mistakes. Report both request latency and end-to-end latency. If you have usable measurements, use them. Otherwise, state assumptions, ranges, and break-even conditions. Label vendor claims, independent measurements, and hypotheses.
